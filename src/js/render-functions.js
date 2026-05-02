@@ -28,10 +28,10 @@ export const createGallery = images => {
         alt="${tags}"
       />
       <div class="info-wrapper">
-      <p>Likes: ${likes}</p>
-      <p>Views: ${views}</p>
-      <p>Comments: ${comments}</p>
-      <p>Downloads: ${downloads}</p>
+      <p class="info">Likes: ${likes}</p>
+      <p class="info">Views: ${views}</p>
+      <p class="info">Comments: ${comments}</p>
+      <p class="info">Downloads: ${downloads}</p>
       </div>
     </a>
   </li>`

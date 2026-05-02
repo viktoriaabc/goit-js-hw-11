@@ -39,6 +39,7 @@ function onSearchFormSubmit(event) {
           message:
             'Sorry, there are no images matching your search query. Please try again!',
           position: 'topRight',
+          backgroundColor: 'plum',
         });
         return;
       }
@@ -48,7 +49,10 @@ function onSearchFormSubmit(event) {
       console.log(hits);
     })
     .catch(err => {
-      console.log(err);
+      iziToast.error({
+        message: 'Error fetch images',
+        position: 'topRight',
+      });
     })
     .finally(() => {
       hideLoader();
